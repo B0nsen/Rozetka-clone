@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <header style="display: flex;">
+            <button id="OpenButton" style="margin-left: 40px;">&#9776;</button>
+            <a id="icon" href = "index.html"><img src="Icons/Rozetka icon.png" width="240px" height="60px"></a>
+            <button id="ToggleCatalog" style="margin-top: 25px; color: white;"><img src="Icons/Catalog icon.png" width="35px" height="35px">Каталог</button>
+        </header>
+        <div id="sidebar">
+            <div style="width: 400px; height: 200px; background-color: rgba(34,31,31,255); position: absolute;top: 0;left: 0;">
+            <a id="icon" href = "index.html" class="side-bar-icon"><img src="Icons/Rozetka icon.png" width="240px" height="60px"></a>
+            <button id="CloseButton">X</button>
+            <div style="display: flex; flex-direction: row;">
+            <a><img src="Icons/Account icon.png" width="100px" height="100px" style="margin-top: 90px;"></a>
+            <a href = "#" style="margin-top: 125px;">Вход</a>
+            <a style="color: white; margin-top: 125px;">|</a>
+            <a href = "#" style="margin-top: 125px;">Регистрация</a>
+            </div>
+            <div class="side-bar-options"><button id="alt-catalog-open">Каталог товаров</button></div>
+            <div class="side-bar-options" style="border: none;">Справочный центр</div>
+            <div class="side-bar-options">Чат с ROZETKA</div>
+            <div class="side-bar-options">Корзина</div>
+            <div style="margin-top: 75px;">
+            <ul id="info"><h4>Информация о компании</h2>
+                <li><a href = "#">О нас</a></li>
+                <li><a href = "#">Условия использования сайта</a></li>
+                <li><a href = "#">Вакансии</a></li>
+                <li><a href = "#">Контакты</a></li>
+                <li><a href = "#">Все катигории</a></li>
+                <li><a href = "#">ROZETKA.PL</a></li>
+            </ul>
+            </div>
+            <div style="margin-top: 75px;">
+                <ul id="info"><h4>Помощь</h3>
+                    <li><a href = "#">Доставка и оплата</a></li>
+                    <li><a href = "#">Кредит</a></li>
+                    <li><a href = "#">Гарантия</a></li>
+                    <li><a href = "#">Возврат товара</a></li>
+                    <li><a href = "#">Сервисные центры</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+        <div id="sidebar2">
+            <ul>
+                <li><img src = "Icons/Icon1.png" id="IconSize"><a href = "Laptop and PC.html">Ноутбуки и компьютеры</a></li>
+                <li><img src = "Icons/Icon2.png" id="IconSize"><a href = "Phone, TV and electronics.html">Смартфоны, ТВ и электроника</a></li>
+                <li><img src = "Icons/Icon3.png" id="IconSize"><a href = "Tovary dla gamerov.html">Товары для геймеров</a></li>
+                <li><img src = "Icons/Icon4.png" id="IconSize"><a href = "Bytovaya tehnika.html">Бытовая техника</a></li>
+                <li><img src = "Icons/Icon5.png" id="IconSize"><a href = "#">Товары для дома</a></li>
+                <li><img src = "Icons/Icon6.png" id="IconSize"><a href = "#">Инструменты и автотовары</a></li>
+                <li><img src = "Icons/Icon7.png" id="IconSize"><a href = "#">Сантехника и ремонт</a></li>
+                <li><img src = "Icons/Icon8.png" id="IconSize"><a href = "#">Дача, сад и огород</a></li>
+                <li><img src = "Icons/Icon9.png" id="IconSize"><a href = "#">Спорт и увлечения</a></li>
+                <li><img src = "Icons/Icon10.png" id="IconSize"><a href = "#">Одежда, обувь и украшения</a></li>
+                <li><img src = "Icons/Icon11.png" id="IconSize"><a href = "#">Красота и здоровье</a></li>
+                <li><img src = "Icons/Icon12.png" id="IconSize"><a href = "#">Детские товары</a></li>
+                <li><img src = "Icons/Icon13.png" id="IconSize"><a href = "#">Зоотовары</a></li>
+                <li><img src = "Icons/Icon14.png" id="IconSize"><a href = "#">Офис, школа, книги</a></li>
+                <li><img src = "Icons/Icon15.png" id="IconSize"><a href = "#">Алкогольные напитки и продукты</a></li>
+                <li><img src = "Icons/Icon16.png" id="IconSize"><a href = "#">Бытовая химия</a></li>
+                <li style="border-top: 1px solid rgba(233,233,233,255); border-bottom: 1px solid rgba(233,233,233,255); padding-top: 15px; padding-bottom: 15px;"><img src = "Icons/Icon17.png" id="IconSize"><a href = "#">Справочный центр</a></li>
+                <li><img src = "Icons/Icon18.png" id="IconSize"><a href = "#" style="color: rgba(0,160,70,255);">Чат с ROZETKA</a></li>
+                <li style="border-bottom: 1px solid rgba(233,233,233,255);border-top: 1px solid rgba(233,233,233,255); padding-top: 15px; padding-bottom: 15px;"><img src = "Icons/Icon19.png" id="IconSize"><a href = "#">Магазины Rozetka</a></li>
+            </ul>
+        </div>
+        <div id = "main">
+        <div id ="main-catalog"></div>
+        </div>
+
+        <div id="catalog"><button id="CloseCatalog">X</button>
+            <div style="display: flex; flex-direction: row;">
+                <ul class = "catalog-display">
+                    <li><a href = "Laptop and PC.html">Ноутбуки и компьютеры</a></li>
+                    <li><a href = "Phone, TV and electronics.html">Смартфоны, ТВ и электроника</a></li>
+                    <li><a href = "Tovary dla gamerov.html">Товары для геймеров</a></li>
+                    <li><a href = "Bytovaya tehnika.html">Бытовая техника</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Товары для дома</a></li>
+                    <li><a href = "#">Инструменты и автотовары</a></li>
+                    <li><a href = "#">Сантехника и ремонт</a></li>
+                    <li><a href = "#">Дача, сад и огород</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Спорт и увлечения</a></li>
+                    <li><a href = "#">Одежда, обувь и украшения</a></li>
+                    <li><a href = "#">Красота и здоровье</a></li>
+                    <li><a href = "#">Детские товары</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Зоотовары</a></li>
+                    <li><a href = "#">Офис, школа, книги</a></li>
+                    <li><a href = "#">Алкогольные напитки и продукты</a></li>
+                    <li><a href = "#">Бытовая химия</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
+        <script>   
+        let items = [
+        {
+                name: "Смартфоны, ТВ и электроника",
+                href: "Phone, TV and electronics.html",
+                items: [
+                    {
+                        name: "Мобильный телефон Apple iPhone 15 128GB Pink (MTP13RX/A)",
+                        price: 42499,
+                        href: "iPhone15.html",
+                        desc: "Экран (6.1\", OLED (Super Retina XDR), 2556x1179) / Apple A16 Bionic / двойная основная камера: 48 Мп + 12 Мп, фронтальная камера: 12 Мп / 128 ГБ встроенной памяти / 3G / LTE / 5G / GPS / Nano-SIM / iOS 17",
+                        images: [
+                            "Phone, TV and electronics/iPhone 15 128GB/1.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/2.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/3.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/4.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/5.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/6.webp",
+                            "Phone, TV and electronics/iPhone 15 128GB/7.webp",
+                        ]
+                    },
+                    {
+                        name: "Мобильный телефон Samsung Galaxy S22 8/256GB Green (SM-S901BZGGSEK)",
+                        price: 24599,
+                        href: "S22.html",
+                        desc: "Экран (6.1\", Dynamic AMOLED 2X, 2340x1080) / Samsung Exynos 2200 (2.8 ГГц + 2.5 ГГц + 1.8 ГГц) / тройная основная камера: 50 Мп + 12 Мп + 10 Мп, фронтальная 10 Мп / RAM 8 ГБ / 256 ГБ встроенной памяти / 3G / LTE / 5G / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 12 / 3700 мА*ч",
+                        images: [
+                            "Phone, TV and electronics/Samsung Galaxy S22/1.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/2.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/3.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/4.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/5.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/6.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/7.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/8.webp",
+                        ]
+                    },
+                    {
+                        name: "Мобильный телефон Samsung Galaxy M34 5G 8/128GB Dark Blue (SM-M346BDBGSEK)",
+                        price: 11999,
+                        href: "M34.html",
+                        desc: "Экран (6.5\", Super AMOLED, 2340x1080) / Samsung Exynos 1280 (2.0 ГГц + 2.4 ГГц) / основная тройная камера: 50 Мп + 8 Мп + 2 Мп, фронтальная камера: 13 Мп / RAM 8 ГБ / 128 ГБ встроенной памяти + microSD (до 1 ТБ) / 3G / LTE / 5G / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 13 / 6000 мА*ч",
+                        images: [
+                            "Phone, TV and electronics/Samsung Galaxy M34/1.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/2.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/3.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/4.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/5.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/6.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/7.webp",
+                            "Phone, TV and electronics/Samsung Galaxy M34/8.webp",
+                        ]
+                    },
+                    {
+                        name: "Телевизор LG OLED65C36LC",
+                        price: 104999,
+                        href: "LG.html",
+                        desc: "Диагональ экрана 65\" Разрешение 3840x2160 Частота экрана (интерполированная) 120 Гц Операционная система WebOS Диапазоны цифрового тюнера DVB-C DVB-S2 DVB-T2 Естественная частота обновления (native) 120 Гц",
+                        images: [
+                            "Phone, TV and electronics/LG OLED65C36LC/1.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/2.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/3.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/4.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/5.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/6.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/7.webp",
+                            "Phone, TV and electronics/LG OLED65C36LC/8.webp",
+                        ]
+                    }
+                ]
+            }
+        ]
+
+        let main_catalog = document.getElementById("main-catalog");
+
+        function createCategory(item)
+        {
+            DisplayName(item);
+            let div = document.createElement("div");
+            div.classList.add("displayCategory");
+            let i = 0;
+            for(const items of item.items)
+            {
+                let item = document.createElement("div");
+                item.classList.add("item");
+                item.insertAdjacentHTML("beforeend", `<img src = "${items.images[0]}"; class = "photo">`);
+                item.insertAdjacentHTML("beforeend", `<a href = "${items.href}"; class = "button-class">${items.name}</a><br>`);
+                item.insertAdjacentHTML("beforeend", `<a class = "price"; class = "button-class">${items.price}₴<a>`);
+                div.append(item);
+                console.log(1);
+                i++;
+                if(i === 3)
+                {
+                    main_catalog.append(div);
+                    i = 0;
+                    div = document.createElement("div");
+                    div.classList.add("displayCategory");
+                }
+            }
+            main_catalog.append(div);
+        }
+
+        function DisplayName(item)
+        {
+            let name = document.createElement("div");
+            name.insertAdjacentHTML("beforeend", `<a href = "${item.href}"><h2 style = "margin-left:50px">${item.name}</h2></a>`);
+            main_catalog.append(name);
+            
+        }
+        
+        items.forEach(item => {
+            createCategory(item);
+        });
+
+
+        document.getElementById('OpenButton').addEventListener('click', function() {
+                OpenSidebar();
+            });
+
+
+            document.getElementById('CloseButton').addEventListener('click', function()
+            {
+                CloseSidebar();
+            });
+
+            document.getElementById("ToggleCatalog").addEventListener('click', function ()
+            {
+                ToggleCatalog();
+            });
+
+            document.getElementById("CloseCatalog").addEventListener('click', function ()
+            {
+                CloseCatalog();
+            });
+
+            document.getElementById("alt-catalog-open").addEventListener('click', function()
+            {
+                ToggleCatalog();
+            });
+
+            
+                
+
+            function OpenSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.style.width = '400px';
+                overlay.style.display = "block";
+            }
+
+            function ToggleCatalog()
+            {
+                const sidebar = document.getElementById('sidebar');
+                const catalog = document.getElementById('catalog');
+                const overlay = document.getElementById('overlay');
+                catalog.style.height = '400px';
+                overlay.style.display = "block";
+                sidebar.style.width = "0px";
+            }
+
+            function CloseCatalog()
+            {
+                const catalog = document.getElementById('catalog');
+                const overlay = document.getElementById('overlay');
+                catalog.style.height = '0px';
+                overlay.style.display = "none";
+            }
+            
+
+            function CloseSidebar()
+            {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.style.width = "0px";
+                overlay.style.display = "none";
+            }
+
+        </script>
+    </body>
+</html>

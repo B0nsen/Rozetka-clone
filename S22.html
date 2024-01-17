@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <header style="display: flex;">
+            <button id="OpenButton" style="margin-left: 40px;">&#9776;</button>
+            <a id="icon" href = "index.html"><img src="Icons/Rozetka icon.png" width="240px" height="60px"></a>
+            <button id="ToggleCatalog" style="margin-top: 25px; color: white;"><img src="Icons/Catalog icon.png" width="35px" height="35px">Каталог</button>
+        </header>
+        <div id="sidebar">
+            <div style="width: 400px; height: 200px; background-color: rgba(34,31,31,255); position: absolute;top: 0;left: 0;">
+            <a id="icon" href = "index.html" class="side-bar-icon"><img src="Icons/Rozetka icon.png" width="240px" height="60px"></a>
+            <button id="CloseButton">X</button>
+            <div style="display: flex; flex-direction: row;">
+            <a><img src="Icons/Account icon.png" width="100px" height="100px" style="margin-top: 90px;"></a>
+            <a href = "#" style="margin-top: 125px;">Вход</a>
+            <a style="color: white; margin-top: 125px;">|</a>
+            <a href = "#" style="margin-top: 125px;">Регистрация</a>
+            </div>
+            <div class="side-bar-options"><button id="alt-catalog-open">Каталог товаров</button></div>
+            <div class="side-bar-options" style="border: none;">Справочный центр</div>
+            <div class="side-bar-options">Чат с ROZETKA</div>
+            <div class="side-bar-options">Корзина</div>
+            <div style="margin-top: 75px;">
+            <ul id="info"><h4>Информация о компании</h2>
+                <li><a href = "#">О нас</a></li>
+                <li><a href = "#">Условия использования сайта</a></li>
+                <li><a href = "#">Вакансии</a></li>
+                <li><a href = "#">Контакты</a></li>
+                <li><a href = "#">Все катигории</a></li>
+                <li><a href = "#">ROZETKA.PL</a></li>
+            </ul>
+            </div>
+            <div style="margin-top: 75px;">
+                <ul id="info"><h4>Помощь</h3>
+                    <li><a href = "#">Доставка и оплата</a></li>
+                    <li><a href = "#">Кредит</a></li>
+                    <li><a href = "#">Гарантия</a></li>
+                    <li><a href = "#">Возврат товара</a></li>
+                    <li><a href = "#">Сервисные центры</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column;" id="box">
+        </div>
+        <div id="desc">
+
+        </div>
+        </div>
+        <div id="catalog"><button id="CloseCatalog">X</button>
+            <div style="display: flex; flex-direction: row;">
+                <ul class = "catalog-display">
+                    <li><a href = "Laptop and PC.html">Ноутбуки и компьютеры</a></li>
+                    <li><a href = "Phone, TV and electronics.html">Смартфоны, ТВ и электроника</a></li>
+                    <li><a href = "Tovary dla gamerov.html">Товары для геймеров</a></li>
+                    <li><a href = "Bytovaya tehnika.html">Бытовая техника</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Товары для дома</a></li>
+                    <li><a href = "#">Инструменты и автотовары</a></li>
+                    <li><a href = "#">Сантехника и ремонт</a></li>
+                    <li><a href = "#">Дача, сад и огород</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Спорт и увлечения</a></li>
+                    <li><a href = "#">Одежда, обувь и украшения</a></li>
+                    <li><a href = "#">Красота и здоровье</a></li>
+                    <li><a href = "#">Детские товары</a></li>
+                </ul>
+                <ul class = "catalog-display">
+                    <li><a href = "#">Зоотовары</a></li>
+                    <li><a href = "#">Офис, школа, книги</a></li>
+                    <li><a href = "#">Алкогольные напитки и продукты</a></li>
+                    <li><a href = "#">Бытовая химия</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            let item = {
+                        name: "Мобильный телефон Samsung Galaxy S22 8/256GB Green (SM-S901BZGGSEK)",
+                        price: 24599,
+                        href: "S22.html",
+                        desc: "Экран (6.1\", Dynamic AMOLED 2X, 2340x1080) / Samsung Exynos 2200 (2.8 ГГц + 2.5 ГГц + 1.8 ГГц) / тройная основная камера: 50 Мп + 12 Мп + 10 Мп, фронтальная 10 Мп / RAM 8 ГБ / 256 ГБ встроенной памяти / 3G / LTE / 5G / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 12 / 3700 мА*ч",
+                        images: [
+                            "Phone, TV and electronics/Samsung Galaxy S22/1.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/2.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/3.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/4.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/5.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/6.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/7.webp",
+                            "Phone, TV and electronics/Samsung Galaxy S22/8.webp",
+                        ]
+            }
+
+
+            let box = document.getElementById("box");
+            let desc = document.getElementById("desc");
+
+        function createWR(item)
+        {
+            let div = document.createElement("div");
+            div.classList.add("wr");
+            let i = 0;
+            for(const images of item.images)
+            {
+                div.insertAdjacentHTML("beforeend", `<a href="${images}" target="imgbox"><img src="${images}" alt="" ></a>`)
+            }
+            box.append(div);
+        }
+
+        function createWrapperBox(item)
+        {
+            let div = document.createElement("div");
+            div.classList.add("wrapper_box");
+            div.insertAdjacentHTML("beforeend", `<iframe scrolling="no" class="box" src="${item.images[0]}" frameborder="0" name="imgbox"></iframe>`);
+            box.append(div);
+        }
+
+        function createDesc(item)
+        {
+            let name = document.createElement("div");
+            name.insertAdjacentHTML("beforeend", `<h2>${item.name}</h2>`);
+            let price = document.createElement("div");
+            price.insertAdjacentHTML("beforeend", `<h3>${item.price}₴</h3>`)
+            let button = document.createElement("button");
+            button.classList.add("purchase");
+            button.insertAdjacentHTML("beforeend", "Купить");
+            let description = document.createElement("div");
+            description.insertAdjacentHTML("beforeend", `<a>${item.desc}</a>`);
+            desc.append(name);
+            desc.append(price);
+            desc.append(button);
+            desc.append(description);
+        }
+
+
+
+        createWrapperBox(item);
+        createWR(item);
+        createDesc(item);
+
+
+
+
+
+        document.getElementById('OpenButton').addEventListener('click', function() {
+                OpenSidebar();
+            });
+
+
+            document.getElementById('CloseButton').addEventListener('click', function()
+            {
+                CloseSidebar();
+            });
+
+            document.getElementById("ToggleCatalog").addEventListener('click', function ()
+            {
+                ToggleCatalog();
+            });
+
+            document.getElementById("CloseCatalog").addEventListener('click', function ()
+            {
+                CloseCatalog();
+            });
+
+            document.getElementById("alt-catalog-open").addEventListener('click', function()
+            {
+                ToggleCatalog();
+            });
+
+            
+                
+
+            function OpenSidebar() {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.style.width = '400px';
+                overlay.style.display = "block";
+            }
+
+            function ToggleCatalog()
+            {
+                const sidebar = document.getElementById('sidebar');
+                const catalog = document.getElementById('catalog');
+                const overlay = document.getElementById('overlay');
+                catalog.style.height = '400px';
+                overlay.style.display = "block";
+                sidebar.style.width = "0px";
+            }
+
+            function CloseCatalog()
+            {
+                const catalog = document.getElementById('catalog');
+                const overlay = document.getElementById('overlay');
+                catalog.style.height = '0px';
+                overlay.style.display = "none";
+            }
+            
+
+            function CloseSidebar()
+            {
+                const sidebar = document.getElementById('sidebar');
+                const overlay = document.getElementById('overlay');
+                sidebar.style.width = "0px";
+                overlay.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
